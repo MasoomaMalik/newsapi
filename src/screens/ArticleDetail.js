@@ -13,15 +13,20 @@ const ArticleDetail = () => {
    
     let resp = await axios
       .get(
+        // "https://newsapi.org/v2/everything?q=cnn
+        
+      //  " https://newsapi.org/v2/top-headlines/sources?country=gb&id=independent
+      "https://newsapi.org/v2/everything?q=title:'Gamescom'&apiKey=b928528e019f440d94e64387f97cd2c1"
+      //  "https://fakestoreapi.com/products/1"
         // https://newsapi.org/v2/everything?domains=techcrunch.com,thenextweb.com&apiKey=
         // `https://newsapi.org/v2/everything?q=${id}&sortBy=popularity&apiKey=b928528e019f440d94e64387f97cd2c1`
-  //  , {
-  //   params: {
+   , {
+    params: {
     
-
-  //     // data:'0'
-  //   }
-  //  } 
+// id:1
+      // data:'0'
+    }
+   } 
    
    )
 
@@ -37,8 +42,8 @@ const ArticleDetail = () => {
         console.error(error);
       });
 
-      console.log("resp")
-      console.log(resp)
+      // console.log("resp")
+      // console.log(resp)
   };
 
   useEffect(() => {

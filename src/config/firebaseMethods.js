@@ -7,3 +7,4 @@
 //1. refercen ko create krna, then reference per data bhejna
 //ref(databse,nodekanam)
 //jo promise humne khud bnaya hai wohi signup wali screen ma jaega
+// onvalue k andar then catch nh h
